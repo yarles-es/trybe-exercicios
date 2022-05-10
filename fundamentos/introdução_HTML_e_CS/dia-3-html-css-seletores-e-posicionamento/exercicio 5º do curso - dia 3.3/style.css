@@ -1,0 +1,66 @@
+ol li {
+    background-color: yellow;
+}
+
+ol li:nth-of-type(2n){
+    color: green;
+}
+
+ol li:nth-last-of-type(2n+1) {
+    text-transform: uppercase;
+}
+
+h1, h3, h2{
+    color: red;
+}
+h1 em, h2 em, h3 em{
+    font-size: 40px;
+    border: 1px solid black;
+}
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bold;
+}
+
+#linguagens li:nth-last-of-type(n +3){
+    color: blue;
+}
+
+.possui-java{
+    background-color: pink;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#aliados li a:hover{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#aliados li a:hover[href*="stackoverflow"] {
+    color: orange;
+  }
+  
+  #aliados li a:hover[href*="w3schools"] {
+    color: green;
+  }
+  
+  #aliados li a:hover[href*="mozilla"] {
+    color: black;
+  }
+  
+  #aliados li a:hover[href*="devdocs"] {
+    color: yellow;
+  }
+  
+  #aliados li a:hover[href*="trybe"] {
+    color: green;
+  }
+
+
