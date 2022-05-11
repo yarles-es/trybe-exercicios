@@ -1,41 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./style.css">
+    <title>Stomatopoda</title>
 </head>
 
   <body>
+    <nav class="navegação">
+        <ul >
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#fatos-interessantes">Fatos Interessantes</a></li>
+            <li><a href="#video">Video do Stomatopoda</a></li>
+            <li><a href="#referencia">Referências</a></li>
+        </ul>
+    </nav>
+
     <header>
         <h1>Soco a 80km/h: Conheça o Stomatopoda</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a>Pagina Inicial</a></li>
-            <li><a>Sobre</a></li>
-            <li><a>Fatos Interessantes</a></li>
-            <li><a>Referências</a></li>
-            <li><a>Video do Stomatopoda</a></li>
-        </ul>
-    </nav>
-    <article>
-        <section>
-            <h2>Fatos Sobre o Stomatopoda</h2>
+    
+    <article class="artigo-inteiro">
+        <div class="tabela">
+            <table>
+                <img class="imagem-tabela" src="./fotoparatabela.webp" alt="O não camarão">
+                <h3>classificação cientifica</h3>
+                <ul>
+                    <li> <strong>Reino: </strong> Animalia</li>
+                    <li> <strong>Filo: </strong> Arthropoda</li>
+                    <li> <strong>Subfilo: </strong> Crustacea</li>
+                    <li> <strong>Classe: </strong> Malacostraca</li>
+                    <li> <strong>Subclasse:</strong>  Hoplocarida</li>
+                    <li> <strong>Ordem: </strong> Stomatopoda</li>
+                </ul>
+                
+                <h3>Superfamílias e famílias</h3>
+                <ul>
+                    <h4>Bathysquilloidea</h4>
+    
+                    <li>Bathysquillidae</li>
+                    <li>Indosquillidae Gonodactyloidea</li>
+                    <li>Alainosquillidae</li>
+                    <li>Hemisquillidae</li>
+                    <li>Gonodactylidae</li>
+                    <li>Odontodactylidae</li>
+                    <li>Protosquillidae</li>
+                    <li>Pseudosquillidae</li>
+                    <li>Takuidae</li>
+                    <h4>Erythrosquilloidea</h4>
+    
+                    <li>Erythrosquillidae Lysiosquilloidea</li>
+                    <li>Coronididae</li>
+                    <li>Lysiosquillidae</li>
+                    <li>Nannosquillidae</li>
+                    <li>Tetrasquillidae</li>
+    
+                    <h4>Squilloidea</h4>
+    
+                    <li>Squillidae</li>
+    
+                    <h4>Eurysquilloidea</h4>
+    
+                    <li>Eurysquillidae</li>
+                    <h4>Parasquilloidea</h4>
+                    <li>Parasquillidae</li>
+                </ul>
+                
+            </table>
+        </div>
+        <section class="artigo-primeiro">
+
+            <h2 id="sobre">Fatos Sobre o Stomatopoda</h2>
             
             <p>Stomatopoda (ou <em>estomatópode</em>), chamados popularmente de tamarutacas ou de lacraias-do-mar no Brasil, é uma ordem de crustáceos marinhos da subclasse Hoplocarida, que agrupa cerca de 400 espécies, caracterizadas principalmente pela morfologia da segunda pata torácica, que é modificada em apêndice subquelado, lembrando uma pata de louva-a-deus.</p>
+            
             <img width="500px" src="./fotocamarao.jpg" alt="camarão">
 
             <h3>Conhecendo melhor o Animal</h3>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/E0Li1k5hGBE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
             <p>Os estomatópodes são predadores ativos que caçam presas com o auxílio de um sentido de visão muito apurado e capaz de interpretar polarização no espectro ultravioleta e infravermelho). Apresentam uma grande variação de tamanho, que pode ir de poucos milímetros até aproximadamente 40 cm nas espécies maiores. Eles vivem em fundo consolidado, lodoso ou ainda arenoso, onde cavam seus buracos ou aproveitam-se dos orifícios deixados por outros animais para neles se instalar. São animais exclusivamente carnívoros, alimentando-se de camarões, caranguejos, moluscos, peixes e até mesmo outros da mesma ordem. O segundo par de patas, muito desenvolvido, é usado tanto para atacar a presa como para se defender. O urópodo, quando aberto, também funciona para defesa, como um escudo, fechando a galeria em que o animal esteja instalado. A fêmea desova no local onde se abriga e, em caso de perigo, enrola os ovos como uma bola, prendendo-os junto ao corpo até encontrar um abrigo mais protegido.</p>
+
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/E0Li1k5hGBE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
         </section>
+        
+        
 
-        <h2>Fatos Interessantes do Stomatopoda (ou <em>estomatópode</em>) </h2>
+        <h2 id="fatos-interessantes">Fatos Interessantes do Stomatopoda (ou <em>estomatópode</em>) </h2>
 
-        <section>
+        <section class="artigo-segundo">
 
             <h3>Super visão!</h3>
             
@@ -44,14 +98,17 @@
             <p>A maioria das pessoas tem três tipos de células de detecção de luz, ou fotorreceptores, que são sensíveis à luz vermelha, verde e azul. Mas o camarão mantis tem de <strong>12 a 16 fotorreceptores diferentes em sua banda média</strong>. A maioria das pessoas assume que, portanto, deve ser realmente boa em ver uma ampla gama de cores – uma “ bomba termonuclear de luz e beleza ”, como disse o Oatmeal.</p>
         </section>
 
-        <section>
+        <section class="artigo-terceiro">
+
             <h3>O Soco mais potente!</h3>
+
             <iframe width="560" height="315" src="https://www.youtube.com/embed/i-ahuZEvWH8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
             <p>Stomatopoda são capazes de desferir um dos mais rápidos e violentos golpes do reino animal, um soco que pode apresentar a velocidade de um <strong>tiro calibre .22 (equivalente a 720 km/h) e uma pressão de impacto de 600 N/cm²</strong>. Essa força esmagadora é a responsável pelo seu título de "lagosta-boxeadora" e é capaz de facilmente quebrar a carapaça de um caranguejo, as conchas duras e calcificadas de gastrópodes ou até mesmo quebrar o vidro reforçado de um aquário.</p>
         </section>
 
-        <section>
-            <h3>Referências</h3>
+        <section class="artigo-quarto">
+            <h3 id="referencia">Referências</h3>
             <ul>
                 <li><a href="https://pt.wikipedia.org/wiki/Stomatopoda">https://pt.wikipedia.org/wiki/Stomatopoda</a></li>
                 <li><a href="https://www.hypeness.com.br/2021/08/camarao-mantis-o-animal-com-o-soco-mais-potente-da-natureza-capaz-de-destruir-aquarios/">https://www.hypeness.com.br/2021/08/camarao-mantis-o-animal-com-o-soco-mais-potente-da-natureza-capaz-de-destruir-aquarios/</a></li>
@@ -60,44 +117,10 @@
         </section>
     </article>
     
-    <table class="tabela">
-        <span><img src="./fotoparatabela.webp" alt="O não camarão"> </span>
-        <h3>classificação cientifica</h3>
-        <ul>
-            <li>Reino: Animalia</li>
-            <li>Filo: Arthropoda</li>
-            <li>Subfilo: Crustacea</li>
-            <li>Classe: Malacostraca</li>
-            <li>Subclasse: Hoplocarida</li>
-            <li>Ordem: Stomatopoda</li>
-        </ul>
-
-        <h3>Superfamílias e famílias</h3>
-        <ul>
-            <li><strong>Bathysquilloidea</strong></li>
-            <li>Bathysquillidae</li>
-            <li>Indosquillidae Gonodactyloidea</li>
-            <li>Alainosquillidae</li>
-            <li>Hemisquillidae</li>
-            <li>Gonodactylidae</li>
-            <li>Odontodactylidae</li>
-            <li>Protosquillidae</li>
-            <li>Pseudosquillidae</li>
-            <li>Takuidae</li>
-            <li><strong>Erythrosquilloidea</strong></li>
-            <li>Erythrosquillidae Lysiosquilloidea</li>
-            <li>Coronididae</li>
-            <li>Lysiosquillidae</li>
-            <li>Nannosquillidae</li>
-            <li>Tetrasquillidae</li>
-            <li><strong>Squilloidea</strong></li>
-            <li>Squillidae</li>
-            <li><strong>Eurysquilloidea</strong></li>
-            <li>Eurysquillidae</li>
-            <li><strong>Parasquilloidea</strong></li>
-            <li>Parasquillidae</li>
-        </ul>
-
-    </table>
+    <section>
+        <footer>
+            "Conteúdo compilado por Yarles de Andrade Espirito Santo, 10/05/2022".
+        </footer>
+    </section>
   </body>
 </html>

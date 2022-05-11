@@ -1,0 +1,148 @@
+.tabela{
+    border: 5px black solid;
+    width: 400px;
+    font-size: 20px;
+    float: right;
+    margin-right: 30px;
+    margin-top: 20px;
+
+}
+.imagem-tabela{
+    width:90%;
+    display: block;
+    margin: auto;
+}
+.tabela h3{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+.tabela h4{
+ color: blue;
+}
+
+/*parte a cima pertence a tabela*/
+
+header{
+    text-align: center;
+    font-size:25px ;
+    color: red;
+    border: 2px rgb(0, 0, 0) solid;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    background-color: black;
+}
+
+.navegação{
+    font-size: 20px;
+    border: 2px rgb(0, 0, 0) solid;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+.navegação li{
+    display: inline-block;
+    margin-right:100px;
+    text-align: center;
+    margin-left:100px;
+    font-weight: bold;
+}
+.navegação li a {
+    text-decoration: none;
+    color: aqua;
+}
+
+/*parte da navegação acima*/
+
+.artigo-inteiro{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(207, 219, 154);
+    border-radius: 4px;
+}
+
+.artigo-inteiro h2{
+    font-size: 40px;
+    text-align: center;
+    color:rgb(0, 68, 68);
+}
+
+.artigo-inteiro, .artigo-segundo, .artigo-terceiro > h3{
+    font-size: 25px;
+}
+
+/* artigo inteiro acima*/
+
+.artigo-primeiro{
+    border: 2px solid rgb(207, 219, 154);
+    width: 70%;
+    margin-left: 50px;
+    text-align: center;
+    margin-top: 10px;
+}
+.artigo-primeiro p {
+    text-align: justify;
+    font-size: 20px;
+}
+
+/* primeiro artigo acima*/
+
+
+.artigo-segundo{
+    border: 2px rgb(207, 219, 154) solid;
+    width: 70%;
+    margin-left: 50px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.artigo-segundo p{
+    text-align: justify;
+    font-size: 20px;
+}
+
+/* artigo segundo acima */
+
+.artigo-terceiro{
+    border: 2px rgb(207, 219, 154) solid;
+    width: 70%;
+    margin-left: 50px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.artigo-terceiro p{
+    text-align: justify;
+    font-size: 20px;
+}
+
+/* terceiro artigo acima */
+
+.artigo-quarto{
+    border: 2px rgb(207, 219, 154) solid;
+    width: 70%;
+    margin-left: 50px;
+    margin-top: 10px;
+
+}
+.artigo-quarto h3{
+    text-align: center;
+}
+
+.artigo-quarto li{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
