@@ -10,7 +10,6 @@ for (let contador = 1; contador < number.length; contador += 1) {
         number[contador]= number[contador2];
         
         number[contador2] = position;
-
       }
     }
   }
