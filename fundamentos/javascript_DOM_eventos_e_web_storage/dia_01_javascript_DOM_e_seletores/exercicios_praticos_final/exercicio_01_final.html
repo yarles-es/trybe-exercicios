@@ -59,8 +59,8 @@
 
        function mudarTexto(localText, text){
        let mudarText = localText;
-       mudarText.innerText = text;
-       console.log(mudarText.innerText);
+       mudarText.innerHTML = text;
+      
        }
        mudarTexto(document.getElementsByTagName('p')[1],'Percebemos, cada vez mais, que a estrutura atual da organização obstaculiza a apreciação da importância dos relacionamentos verticais entre as hierarquias.');
 
@@ -69,9 +69,7 @@
        //------------------------------------------------------------
        
        function mudarCor(local, color){
-           let mudarColor = local;
-           let cor = color;
-            mudarColor.style.background = color;
+         local.style.background = color;
 
        }
        mudarCor(document.getElementsByClassName("main-content")[0],'rgb(76,164,109');
