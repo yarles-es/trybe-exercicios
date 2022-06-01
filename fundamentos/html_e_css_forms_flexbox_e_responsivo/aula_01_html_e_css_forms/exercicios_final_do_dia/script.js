@@ -1,10 +1,3 @@
-const submit = document.getElementById("enviar-informacao");
-const concordaFotos = document.querySelector("#concordo");
-const enviarInformacao = document.querySelector("#enviar-informacao");
-const email = document.querySelector("#email");
-const nome = document.querySelector("#nome-completo");
-const texto = document.querySelector("#explicacao");
-
 function interromper(event) {
   event.preventDefault();
   const validation = textoValidar();
@@ -18,25 +11,29 @@ function interromper(event) {
 }
 
 window.onload = function () {
+  const submit = document.getElementById("enviar-informacao");
   submit.addEventListener("click", interromper);
-  concordaFotos.addEventListener("change", ativaEnviar);
+  concordaFotos.addEventListener("change", ativaConcordo);
 };
 
-function ativaEnviar() {
+function ativaConcordo() {
+  
+    const concordaFotos = document.querySelector("#concordo");
+  const enviarInformacao = document.querySelector("#enviar-informacao");
   enviarInformacao.disabled = !concordaFotos.checked;
 }
 
 function textoValidar() {
-  email.value.length;
+  const email = document.querySelector("#email").value.length;
   const emailInvalido = email < 10 || email > 50;
 
-  nome.value.length;
-  const nomeInvalido = nome < 10 || noem > 40;
+  const nome = document.querySelector("#nome-completo").value.length;
+  const nomeInvalido = nome < 10 || nome > 40;
 
-  texto.value.length;
-  const invalidtexto = texto > 500;
+  const texto = document.querySelector("#explicacao").value.length;
+  const invalidReason = texto > 500;
 
-  if (emailInvalido || nomeInvalido || invalidtexto) {
+  if (emailInvalido || nomeInvalido || invalidReason) {
     return false;
   } else {
     return true;
