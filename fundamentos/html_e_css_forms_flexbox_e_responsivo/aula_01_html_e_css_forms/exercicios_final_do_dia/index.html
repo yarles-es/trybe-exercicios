@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container-form {
+        border: 3px black solid;
+        width: 60%;
+        padding: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(81, 81, 81);
+      }
+      .div-menor {
+        font-size: 17px;
+      }
+
+      .div-modific {
+        font-size: 25px;
+      }
+      header {
+        text-align: center;
+        width: 60%;
+      }
+      textarea {
+        padding: 10px;
+      }
+      .button {
+          margin-top: 10px;
+        width: 200px;
+        height: 50px;
+      }
+      #botoes {
+          text-align: center;
+          width: 60%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Concorra à Viagem dos seus sonhos com a TrybeTrip</h1>
+    </header>
+    <form action="" method="get">
+      <div id="container-form">
+        <div class="div-modific">
+          <label for="nome-completo">Nome:</label>
+          <input
+            placeholder="Digite seu Nome"
+            id="nome-completo"
+            maxlength="40"
+            minlength="10"
+            type="text"
+            name="nome"
+          />
+        </div>
+
+        <br />
+
+        <div class="div-modific">
+          <label for="email">E-mail:</label>
+          <input
+            placeholder="Digite seu e-mail"
+            id="email"
+            name="e-mail"
+            type="email"
+            maxlength="50"
+            minlength="10"
+          />
+        </div>
+
+        <br />
+
+        <div class="div-menor">
+          <label for="cidade"
+            >Destino Preferido:
+            <br />
+            <input type="radio" id="cidade" name="destino-preferido" /> Cidade
+          </label>
+          <label for="campo">
+            <input type="radio" id="campo" name="destino-preferido" /> Campo
+          </label>
+          <label for="praia">
+            <input type="radio" id="praia" name="destino-preferido" /> Praia
+          </label>
+          <label for="montanhas">
+            <input type="radio" id="montanhas" name="destino-preferido" />
+            Montanhas
+          </label>
+        </div>
+
+        <br />
+
+        <div class="div-modific">
+          <label for="explicacao"
+            >Por que você deveria ser a pessoa desenvolvedora a ganhar o
+            concurso TrybeTrip?</label
+          >
+          <br />
+          <textarea
+            placeholder="Digite sua resposta vencedora aqui"
+            name="explicação"
+            id="explicacao"
+            maxlength="500"
+            cols="60"
+            rows="10"
+          ></textarea>
+        </div>
+
+        <br />
+
+        <div class="div-modific">
+          <label for="data">Qual a melhor data para realizar sua viagem?</label>
+          <br />
+          <input type="date" id="data" name="data-escolhida" />
+        </div>
+
+        <br />
+
+        <div class="div-menor">
+          <input type="checkbox" id="check" name="receber-oportunidades" />
+          <label for="check"
+            >Gostaria de receber outras incríveis oportunidades oferecidas pela
+            Trybe?
+          </label>
+        </div>
+
+        <br />
+
+        <div class="div-menor">
+          <input type="checkbox" id="concordo" name="permissao-fotos"  />
+          <label for="concordo"
+            >Concordo que imagens das minhas férias poderão ser usadas na
+            divulgação de concursos futuros.
+          </label>
+        </div>
+      </div>
+      <div id="botoes">
+        <button class="button" id="enviar-informacao" type="submit" disabled>
+          Enviar participação
+        </button>
+        <button class="button"  id='apagar' type="reset">Apagar</button>
+      </div>
+    </form>
+    <script src="./script.js"></script>
+  </body>
+</html>
