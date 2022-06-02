@@ -11,14 +11,14 @@ function interromper(event) {
 }
 
 window.onload = function () {
+  const concordaFotos = document.querySelector("#concordo");
   const submit = document.getElementById("enviar-informacao");
   submit.addEventListener("click", interromper);
   concordaFotos.addEventListener("change", ativaConcordo);
 };
 
 function ativaConcordo() {
-  
-    const concordaFotos = document.querySelector("#concordo");
+  const concordaFotos = document.querySelector("#concordo");
   const enviarInformacao = document.querySelector("#enviar-informacao");
   enviarInformacao.disabled = !concordaFotos.checked;
 }
