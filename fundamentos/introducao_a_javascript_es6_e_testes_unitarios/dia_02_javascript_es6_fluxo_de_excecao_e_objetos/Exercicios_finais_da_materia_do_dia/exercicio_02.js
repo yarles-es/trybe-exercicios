@@ -34,22 +34,23 @@ const order = {
     },
   };
   
-  const customerInfo = (order) => {
-    const deliveryPerson = order.order.delivery.deliveryPerson;
-    const name = order.name;
-    const cel = order.phoneNumber;
-    const rua = order.address.street;
-    const numeroCasa = order.address.number;
-    const apartamento = order.address.apartment;
+  // const customerInfo = (order) => {
+  //   const deliveryPerson = order.order.delivery.deliveryPerson;
+  //   const name = order.name;
+  //   const cel = order.phoneNumber;
+  //   const rua = order.address.street;
+  //   const numeroCasa = order.address.number;
+  //   const apartamento = order.address.apartment;
     
-    console.log(`Olá ${deliveryPerson} entrega para: ${name}, Telefone: ${cel} R. ${rua}, Nº: ${numeroCasa}, AP: ${apartamento}.`);
-  }
-  
-  customerInfo(order);
+  //   console.log(`Olá ${deliveryPerson} entrega para: ${name}, Telefone: ${cel} R. ${rua}, Nº: ${numeroCasa}, AP: ${apartamento}.`);
+  // }
+  // customerInfo(order);
   
   const orderModifier = (order) => {
-    // Adicione abaixo as informações necessárias.
-  
+    order.name = 'Luiz Silva';
+    order.payment.total = 50;
+    
+    console.log(`Olá ${order.name} o total do seu pedido de ${Object.keys(order.order.pizza)[0]}, ${Object.keys(order.order.pizza)[1]}, e ${order.order.drinks.coke.type} é de R$${order.payment.total},00.`)
   }
   
   orderModifier(order);
