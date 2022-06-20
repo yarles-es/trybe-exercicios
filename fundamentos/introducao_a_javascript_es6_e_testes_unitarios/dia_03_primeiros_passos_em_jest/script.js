@@ -60,4 +60,4 @@ const professionalBoard = [
   }
 
   };
-  console.log(searchEmployee('4678-2','lastName'));
+  console.log(searchEmployee('4678-2','specialities'));
