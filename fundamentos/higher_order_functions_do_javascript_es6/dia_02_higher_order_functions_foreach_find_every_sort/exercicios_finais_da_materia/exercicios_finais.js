@@ -120,10 +120,10 @@ const books = [
 // console.log(someBookWasReleaseOnThe80s());
 // }
 
-// exercicio 07;
-// const expectedResult = false;
+ exercicio 07;
+  const expectedResult = false;
 
-// function authorUnique() {
-//   return books.every((book) => books.some((bookSome) => (book.author.birthYear === bookSome.author.birthYear) && (bookSome.author.name !== book.author.name)));
-// }
-// console.log(authorUnique());
+  function authorUnique() {
+  return books.every((book) => books.some((bookSome) => (book.author.birthYear === bookSome.author.birthYear) && (bookSome.author.name !== book.author.name)));
+  }
+  console.log(authorUnique());
