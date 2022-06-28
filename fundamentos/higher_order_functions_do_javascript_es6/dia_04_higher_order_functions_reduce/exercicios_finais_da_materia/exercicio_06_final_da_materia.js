@@ -9,14 +9,14 @@ return acumulador;
 };
 
 const criaObject = (acu, nome, index ) => {
-  acu.push({name: nome, average: grades.reduce(calculaMedia, [])[index]})
+  acu.push({name: nome, average: grades.reduce(calculaMedia, [])[index]});
   return acu;
-}
+};
 
 function studentAverage() {
-  const objectStudents = students.reduce((criaObject), []);
+  const objectStudents = students.reduce(criaObject,[]);
   return objectStudents;
-}
+};  
 console.log(studentAverage());
 
 const expected = [

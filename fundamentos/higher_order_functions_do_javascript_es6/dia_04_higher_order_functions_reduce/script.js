@@ -16,9 +16,6 @@ var str = "How can mirrors be real if our eyes aren't real";
 
 // console.log(colocarM());
 
-const string = str.split(' ').reduce((acumulador, palavra) => {
-    acumulador.push(palavra[0].toUpperCase() + palavra.substring(1));
-    return acumulador;
-},[]).join(' ');
+
 
 console.log(string);
