@@ -28,7 +28,7 @@ const ships = [
     const frases =  ships.reduce((acc, {name, length, measurementUnit }) => {
       acc.push([`${name} is ${length} ${measurementUnit} long.`]);
       return acc;
-    },[])
-    return frases.map(frase => `=> ${frase.toString()}\n`).join('')
-  }
-  console.log(shipLengths(ships))
+    },[]);
+    return frases.map(frase => `=> ${frase.toString()}\n`).join('');
+  };
+  console.log(shipLengths(ships));
