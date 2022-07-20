@@ -1,0 +1,36 @@
+
+.titulo {
+    font-size: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.lista-pokemon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Pokemon {
+    border: solid 5px grey;
+    margin: 5px;
+    height: 300px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.pesquisa {
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    background-color: black;
+}
+
+.tudo {
+   display: flex;
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+}
